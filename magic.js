@@ -1,4 +1,4 @@
-class Magic {
+class Carder {
   constructor(file) {
     this.file = file;
   }
@@ -91,3 +91,5 @@ class Magic {
     return res;
   }
 }
+
+window.Carder = Carder;

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta chartset="UTF-8" />
+    <title>Carder</title>
+  </head>
+  <body>
+    <input type="file" id="file" />
+    <button onclick="make()">开始抠图</button>
+  </body>
+  <!-- <script src="./dist/carder.min.js"></script> -->
+  <script src="./magic.js"></script>
+  <script>
+    function make() {
+      var file = document.getElementById('file').files[0];
+      var card = new Carder(file);
+      card.createStream();
+    }
+  </script>
+</html>

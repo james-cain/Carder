@@ -11,7 +11,7 @@ const config = {
   },
   output: {
     path: buildingForLocal() ? path.resolve(__dirname) : resolve('dist'),
-    library: 'carder',
+    library: 'Carder',
     libraryTarget: 'umd',
     filename: 'carder.min.js'
   },
